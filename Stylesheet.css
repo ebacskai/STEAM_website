@@ -1,0 +1,458 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+    font-family: 'balooregular';
+    src: url('fonts/Baloo-Regular-webfont.eot');
+    src: url('fonts/Baloo-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Baloo-Regular-webfont.woff2') format('woff2'),
+         url('fonts/Baloo-Regular-webfont.woff') format('woff'),
+         url('fonts/Baloo-Regular-webfont.ttf') format('truetype'),
+         url('fonts/Baloo-Regular-webfont.svg#balooregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body {
+        background-color: #fff;
+        font-family: 'Lato', sans-serif;
+        font-weight:400;
+        color: #00263B;
+        margin: 0 auto;
+        max-width:1200px;
+        min-width: 300px;
+       }
+#wrapper {
+    margin:0;
+    }
+header, section, footer, nav, aside, main, article, figure 
+       {
+        display: block;
+        box-sizing:border-box;
+        padding:0;
+        margin:0;
+        
+        }
+nav ul {
+    display:flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color:#F26D4C;
+    padding: 1em;
+    margin:0;
+ 
+}
+nav ul li {
+    list-style-type: none;
+    margin-left: 3em;
+    font-size: 1.3em;
+    font-weight: 700;
+    color:#fff;
+}
+
+nav ul li a:link{
+    text-decoration:none;
+    color: white;
+}
+nav ul li a:visited{
+    text-decoration:none;
+    color: white;
+}
+nav ul li a:hover{
+    text-decoration:underline;
+    color: white;
+    }
+nav ul li a:active{
+    text-decoration: underline;
+    text-decoration-style:solid;
+    color: white;
+    }
+
+button {
+    background-color:#00263B;
+    color:#fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    
+}
+button:hover, button:active
+{
+    background-color:#064162;
+}
+button a:hover, button a:active, 
+button a:visited {
+    color:#fff;
+}
+
+header img {
+    width: 50%;
+    max-width: 300px;
+    height:auto;
+    display: block;
+    margin: 10px auto;    
+}
+
+
+h1 {
+    font-family: 'balooregular',"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+    font-size: 3em;
+    text-align: center;
+    }
+h3 {
+    font-family: 'balooregular',"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+    font-size: 1.2em;
+}
+
+main {
+    margin: 5% 5% 0;
+    padding-bottom: 10%;
+    }
+
+footer {margin: 0;
+    padding: 0;
+}
+#home {
+    display: grid;
+    grid-gap: 2%;
+    grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: auto auto auto auto auto auto;
+    
+}
+#event {
+    
+    grid-column:1/5;
+}
+
+#event_title {
+    
+    background: url("IMG/hand-drawn-science-background-with-elements-collection_500x333.jpg") no-repeat top center;
+    background-size:cover;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+}
+
+#home h1, #home h2 {
+text-align: center;
+padding: 0;
+margin:0;
+color: #fff;
+}
+
+#subscribe_box {
+    max-width: 60%;
+    padding: 10%;
+    grid-column: 5/7;
+    text-align: center;
+    font-size:1.5em;
+    margin:2% auto;
+}       
+#event_description {
+    grid-column: 1/5;
+    padding: 0 2%;
+}
+#what_is_steam { 
+grid-column: 1/4;
+padding:2%;
+}
+
+#steam_video {
+    grid-column: 4/7;
+    margin: 0 2%;
+}
+
+#celebration {
+    grid-column:1/7;
+    padding: 0 2%;
+}
+#thing1 {
+    grid-column:1/3;
+}
+#thing2 {
+    grid-column:3/5;
+}
+#thing3 {
+    grid-column:5/7;
+    
+}
+
+#thing1 p, #thing2 p, #thing3 p{
+    text-align:center;
+}
+
+.things {
+color: #fff;
+max-width:100%;;
+
+}
+.things img {
+    display: block;
+    margin: 0 auto;
+    max-width:100%;
+}
+.things p {
+    margin: 0 auto;
+    padding:10%;
+}
+.things a:link, .things a:visited, .things a:hover, .things a:active {
+    color:#00263B;
+}
+
+#news h2, #news h3
+{   font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+#main_news, #other_news1, #other_news2 {
+    
+    margin: 25px;
+}
+#news img{
+    display:block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    }
+
+#facts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+.facts_box {
+    background-color:#31A08D;
+    border-radius: 5px;
+    text-align:center;
+    width: 250px;
+    height: 150px;
+    margin: 2%
+}
+.facts_box p {
+    font-size: 2em;
+    color:#fff;
+    
+    }
+.facts_box a:visited, .facts_box a:link  {
+    text-decoration: none;
+    color: #fff;
+}.facts_box a:hover, .facts_box a:active {
+    color:#fff;
+    text-decoration: underline;
+    text-decoration-color: #fff;
+}
+
+
+#projects h3{
+    padding: 1em 0 0.5em 0;
+    font-size: 1.5em;
+}
+
+#projects section {
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-around;
+}
+
+.projects_box {
+    background-color:#31A08D;
+    border-radius: 5px;
+    text-align:center;
+    width: 320px;
+    height: auto;
+    margin:2%;
+}
+.projects_box p {
+    font-size: 1.2em;
+    color:#fff;
+}
+.projects_box img {
+    padding:2%;
+}
+
+.projects_box p a:link, .projects_box p a:visited, .projects_box p a:hover, .projects_box p a:active {
+    color:#fff;
+}
+
+.project_main, .instructions, .how_it_works {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 2% auto;
+}
+.project_main img {
+   max-width: 100%;
+    height: auto;
+}
+.materials
+    {
+    display: block;
+    width: 100%;
+    background-color:#064162;
+    color: #fff;
+    text-align: left;
+    padding: 2%;   
+}
+.materials h3 {
+    text-align: left;
+    padding: 0 2%;
+
+}
+.instructions {
+    justify-content:space-between;
+}
+.instructions div {
+    width: 90%;
+}
+
+.learn_more {
+width: 100%;
+background-color:#064162;
+color: #fff;
+text-align: center;
+padding: 0 2%;   
+}
+.learn_more a {
+ color: #fff;
+}
+
+.breadcrumb p{
+    padding-left:5%;
+}
+.breadcrumb a {
+    font-size: 1.1em;
+    color: #00263B;
+}
+
+
+
+
+@media (max-width: 768px) { 
+ nav ul {
+    display:block;
+    text-align: center;
+}
+ #home {
+    display: block;
+}
+#event {
+    margin:0 auto;
+    }   
+#event_title {
+
+    background: url("IMG/hand-drawn-science-background-with-elements-collection_500x333.jpg") no-repeat top right cover;
+    max-width: 100%;
+    margin: 0 auto;
+    }
+#subscribe_box {
+    background-color:#FF8105;
+    margin: 0 auto;
+    }
+#steam_video {
+        margin: 0 auto;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 992px) { 
+#news {
+    display: grid;
+    grid-gap: 5%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+}
+
+#main_news {
+    grid-column:1/3;
+}
+#other_news1 {
+    grid-column:1/2;
+    grid-row:2/3;
+}
+#other_news2 {
+    grid-column: 2/3;
+    grid-row:2/3;
+}
+.instructions div {
+    width: 45%;
+
+    }
+.project_main img {
+   max-width: 60%;
+    height: auto;
+}
+.materials
+    {
+    max-width: 20%;
+    }
+.description {
+    width: 60%;
+    padding: 0 2%;
+    }
+.learn_more {
+    width: 30%;
+    }
+}
+
+@media (min-width: 992px) { 
+
+#projects section {
+    display: grid;
+    grid-gap: 2%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:auto;
+}
+    
+#news {
+    display: grid;
+    grid-gap: 5%;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto;
+
+}
+#main_news {
+    grid-column:2/3;
+    grid-row: 1/3;
+
+}
+    
+  #other_news1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+  #other_news2 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+html {
+      background: url("IMG/abstract-gear-wheel-mechanism-background_41981-1136.jpg") #F0F0F0 repeat-y;
+}
+    
+    .instructions div {
+    width: 30%;
+}
+.project_main img {
+   max-width: 60%;
+    height: auto;
+}
+.materials
+    {
+    max-width: 20%;
+  
+}
+.description {
+    width: 60%;
+    padding: 0 2%;
+    }
+    
+.learn_more {
+    width: 30%;
+    }
+}
